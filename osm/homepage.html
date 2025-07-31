@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="wiki.css" rel="stylesheet">
+    <title>My Wiki</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Disclaimer, parts of the structure of this website NOT the content have been AI generated.-->
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <button class="toggle-btn" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h3>Wiki Navigation</h3>
+
+        </div>
+        <div class="sidebar-links">
+            <a href="#"><i class="fas fa-home"></i> <span>Home</span></a>
+            <a href="#"><i class="fas fa-book"></i> <span>Articles</span></a>
+            <a href="#"><i class="fas fa-bookmark"></i> <span>Blogs</span></a>
+            <a href="#"><i class="fas fa-address-book"></i> <span>Contact</span></a>
+            <a href="#"><i class="fas fa-question-circle"></i> <span>Help</span></a>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div id="main-content">
+        <div class="page-header">
+            <h1>OSM Guides</h1>
+        </div>
+        
+        <div class="wiki-content">
+            <h2>About These Guides</h2>
+            
+            <div class="clearfix">
+                <img src="../images/im-on-the-internet.webp" height="500px" alt="Sample image" class="wiki-image float-left">
+                <p>This is a basic wiki website built with HTML and CSS. This will be used for OSM guides such as micromapping and josm guides, as well as blogs around imports.</p>
+                <p>More coming when i get time!</p>
+            </div>
+            
+
+            <h2>Basic Styling for this wiki</h2>
+            <p>Images can be aligned to the left or right around text.</p>
+            <div class="clearfix">
+                <img src="../images/im-on-the-internet.webp"alt="Sample image on the left" class="wiki-image float-left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque ex mi, ac dictum ex porttitor a. Sed ultricies ligula ligula, sed egestas lectus finibus condimentum. Integer posuere augue ac diam vestibulum, eu congue turpis malesuada. Vivamus diam tellus, posuere id cursus sed, accumsan ut diam. Pellentesque vitae libero at lacus ultrices commodo in a enim. Ut sem est, gravida at turpis sed, molestie fringilla quam. Aliquam viverra sem et eros placerat feugiat. Nullam ipsum lectus, ultrices ut justo ac, pretium iaculis enim. Aliquam sed volutpat turpis. Cras id augue convallis, semper nisi sed, malesuada felis.</p>
+            </div>
+            <div class="clearfix">
+                <img src="../images/im-on-the-internet.webp"alt="Sample image on the right" class="wiki-image float-right">
+                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut risus turpis, fermentum vitae scelerisque ultrices, mollis sed est. Nam et lorem at massa venenatis feugiat vel non velit. Pellentesque laoreet tellus ut tortor viverra, luctus vulputate ipsum tristique. Nam ac ullamcorper lectus, ultricies consequat turpis. Maecenas purus enim, semper quis lectus at, placerat dictum tellus. Donec aliquam imperdiet augue eu scelerisque. Curabitur in aliquet lacus. Suspendisse maximus nulla enim, quis semper urna vestibulum at. Ut vel dolor nec purus consectetur hendrerit. Nam sagittis nunc vel leo mattis eleifend. Ut id iaculis felis, facilisis accumsan augue. Quisque quis turpis sit amet arcu fermentum sollicitudin. Curabitur tempus nulla nisi, ut ultrices arcu vehicula in. Donec blandit finibus orci, quis aliquet nisi tristique faucibus. Mauris quam lectus, fringilla sit amet porta at, tempor ac mi.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('collapsed');
+        }
+        
+        // Collapse sidebar automatically on small screens
+        window.addEventListener('DOMContentLoaded', () => {
+            if (window.innerWidth <= 768) {
+                document.getElementById('sidebar').classList.add('collapsed');
+            }
+        });
+    </script>
+</body>
+</html>
